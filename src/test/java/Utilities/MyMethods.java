@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class MyMethods {
 
-    public WebDriverWait wait = new WebDriverWait(BaseDriver.getDriver(), Duration.ofSeconds(10));
+    public WebDriverWait wait = new WebDriverWait(ParameterDriver.getDriver(), Duration.ofSeconds(10));
 
     public void clickMethod(WebElement element){
         waitUntilVisible(element);
@@ -34,10 +34,9 @@ public class MyMethods {
     public void waitUntilVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
-    //explicit wait - Waits until the specified web element becomes visible on the page.
 
     public void scrollToElement(WebElement element){
-        JavascriptExecutor js = (JavascriptExecutor) BaseDriver.getDriver();
+        JavascriptExecutor js = (JavascriptExecutor) ParameterDriver.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
     public static void myWait(int seconds) {
@@ -48,5 +47,6 @@ public class MyMethods {
             Thread.currentThread().interrupt();
         }
     }
+
 
 }
