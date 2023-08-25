@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 
 public class BaseDriver {
     private static WebDriver driver;
+    //........
 
     public static WebDriver getDriver() {
         if (driver == null) {
