@@ -36,4 +36,13 @@ public class LeftNavBar extends MyMethods {
     @FindBy(xpath ="(//span[contains(text(),'Entrance Exams')])[2]" )
     public WebElement EntranceExamsButton2;
 
+    @FindBy(xpath = "//span[.='Human Resources']")
+    public WebElement HumanResources;
+
+    @FindBy(xpath = "(//span[text()='Setup'])[2]")
+    public WebElement HumanResourcesSetUp;
+
+    @FindBy(css = "div[class=\"children ng-tns-c3380182179-17 ng-trigger ng-trigger-slideInOut ng-star-inserted\"] span")
+    public WebElement Positions;
+
 }
