@@ -36,6 +36,7 @@ public class ParameterDriver {
                     threadDriver.set(new EdgeDriver());
                     break;
                 default:
+                    System.setProperty("webdriver.chrome.driver", "C:/ChromeDriver/chromedriver.exe");
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--remote-allow-origins=*"); // To solve the error with Chrome v111
                     threadDriver.set(new ChromeDriver(options));
