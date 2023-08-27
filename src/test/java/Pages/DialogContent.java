@@ -92,4 +92,11 @@ public class DialogContent extends MyMethods {
 
     @FindBy(css = "iframe[class=\"tox-edit-area__iframe\"]")
     public WebElement iFrame;
+
+    @FindBy(xpath = "(//input[@data-placeholder='Short Name'])[2]")
+    public WebElement addShortName;
+
+    @FindBy(xpath = "//button[@color='accent']")
+    public WebElement editButton;
+
 }

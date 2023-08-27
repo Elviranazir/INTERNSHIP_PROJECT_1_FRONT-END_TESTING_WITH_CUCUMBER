@@ -3,20 +3,29 @@ package StepDefinitions;
 import Pages.DialogContent;
 import Pages.LeftNavBar;
 import Utilities.BaseDriver;
+import Utilities.MyMethods;
 import Utilities.ParameterDriver;
+import io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.Serializers;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.formula.ThreeDEval;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories {
+public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories extends MyMethods {
 
     DialogContent dc = new DialogContent();
     LeftNavBar lb = new LeftNavBar();
@@ -28,8 +37,8 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories {
 
     @Given("Enter username and password")
     public void enter_username_and_password() {
-        dc.sendKeysMethod(dc.username,"turkeyts");
-        dc.sendKeysMethod(dc.password,"TechnoStudy123");
+        dc.sendKeysMethod(dc.username, "turkeyts");
+        dc.sendKeysMethod(dc.password, "TechnoStudy123");
     }
 
     @When("Click on Login Button")
@@ -39,24 +48,28 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories {
 
     @And("Navigate to Human Resources page")
     public void navigateToHumanResourcesPage() {
+        waitUntilVisible(lb.HumanResources);
         lb.HumanResources.click();
     }
 
     @And("Click on Setup")
     public void clickOnSetup() {
-        lb.setUpButton.click();
+        waitUntilVisible(lb.SetUpHumanResources);
+        lb.SetUpHumanResources.click();
     }
 
     @And("Click on Positions")
     public void clickOnPositions() {
+        waitUntilVisible(lb.Positions);
         lb.Positions.click();
     }
 
     @When("Add a new position")
     public void addANewPosition() {
-        dc.addButton.click();
-        dc.searchNameInput.sendKeys("Alina");
-        dc.searchShortNameInput.sendKeys("Ali");
+        clickMethod(dc.addButton);
+        sendKeysMethod(dc.formNameInput, "alina");
+        sendKeysMethod(dc.addShortName, "a");
+        clickMethod(dc.saveButton);
     }
 
     @Then("Success message should be displayed")
@@ -65,10 +78,24 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories {
     }
 
     @When("Edit a new position")
-    public void editANewPosition() {
+    public void editANewPosition() throws InterruptedException {
+        sendKeysMethod(dc.searchNameInput, "alina");
+        sendKeysMethod(dc.searchShortNameInput, "a");
+        clickMethod(dc.searchButton);
+        Thread.sleep(2000);
+        clickMethod(dc.editButton);
+        Thread.sleep(2000);
+        sendKeysMethod(dc.formNameInput, "Bella");
+        sendKeysMethod(dc.addShortName, "b");
+        clickMethod(dc.saveButton);
     }
 
     @When("Delete a new position")
     public void deleteANewPosition() {
+        sendKeysMethod(dc.searchNameInput, "Bella");
+        sendKeysMethod(dc.searchShortNameInput, "b");
+        clickMethod(dc.deleteButton);
+        clickMethod(dc.deleteConfirmButton);
+        successMessageShouldBeDisplayed();
     }
 }
