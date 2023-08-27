@@ -20,7 +20,6 @@ As an Admin User I should be able to Add-Edit-Delete Position Categories Under H
     When Add a new position
     Then Success message should be displayed
 
-
   Scenario: Edit a new position
     When Edit a new position
     Then Success message should be displayed
