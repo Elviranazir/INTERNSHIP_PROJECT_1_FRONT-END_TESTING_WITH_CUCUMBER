@@ -2,30 +2,14 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import Pages.LeftNavBar;
-import Utilities.BaseDriver;
 import Utilities.MyMethods;
 import Utilities.ParameterDriver;
-import io.cucumber.core.internal.com.fasterxml.jackson.databind.ser.Serializers;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.poi.ss.formula.ThreeDEval;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories extends MyMethods {
+public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
 
     DialogContent dc = new DialogContent();
     LeftNavBar lb = new LeftNavBar();
