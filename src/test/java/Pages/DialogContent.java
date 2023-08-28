@@ -99,4 +99,12 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "//button[@color='accent']")
     public WebElement editButton;
 
+    @FindBy(xpath = "(//input[@data-placeholder=\"Name\"])[2]")
+    public WebElement educationSetupSubjectCategoriesNameInbox;
+
+    @FindBy(xpath = "(//input[@data-placeholder=\"Code\"])[2]")
+    public WebElement educationSetupSubjectCategoriesCodeInbox;
+
+
+
 }

@@ -45,4 +45,15 @@ public class LeftNavBar extends MyMethods {
     @FindBy(xpath = "//span[.='Positions']")
     public WebElement Positions;
 
+    @FindBy(xpath = "//span[.='Education']")
+    public WebElement education;
+
+    @FindBy(xpath = "(//span[.='Setup'])[5]")
+    public WebElement educationSetup;
+
+    @FindBy(xpath = "//span[.='Subject Categories']")
+    public WebElement educationSetupSubjectCategories;
+
+
+
 }
