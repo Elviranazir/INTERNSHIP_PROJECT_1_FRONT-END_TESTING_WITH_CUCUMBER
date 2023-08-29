@@ -29,3 +29,4 @@ As an Admin User I should be able to Add-Edit-Delete Position Categories Under H
     When Delete a new position
     Then Success message should be displayed
 
+.

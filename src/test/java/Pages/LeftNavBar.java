@@ -27,6 +27,9 @@ public class LeftNavBar extends MyMethods {
     @FindBy(xpath = "//span[normalize-space()='Fees']")
     public WebElement feesButton;
 
+    @FindBy(xpath = "//span[text()='Fields']")
+    public WebElement FieldsButton;
+
     @FindBy(xpath = "(//span[contains(text(),'Entrance Exams')])[1]")
     public WebElement EntranceExamsButton1;
 
@@ -39,10 +42,10 @@ public class LeftNavBar extends MyMethods {
     @FindBy(xpath = "//span[.='Human Resources']")
     public WebElement HumanResources;
 
-    @FindBy(xpath = "(//span[text()='Setup'])[2]")
-    public WebElement HumanResourcesSetUp;
-
-    @FindBy(css = "div[class=\"children ng-tns-c3380182179-17 ng-trigger ng-trigger-slideInOut ng-star-inserted\"] span")
+    @FindBy(xpath = "(//span[text()='Setup'])[2]\")\n" +
+            "    public WebElement HumanResourcesSetUp;\n" +
+            "\n" +
+            "    @FindBy(css = \"div[class=\\\"children ng-tns-c3380182179-17 ng-trigger ng-trigger-slideInOut ng-star-inserted\"] span")
     public WebElement Positions;
 
 }

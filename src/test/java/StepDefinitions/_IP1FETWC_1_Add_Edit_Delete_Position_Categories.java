@@ -59,14 +59,18 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position_Categories {
         dc.searchShortNameInput.sendKeys("Ali");
     }
 
+
+
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
+
         dc.assertText(dc.successMessage, "successfully");
     }
 
     @When("Edit a new position")
     public void editANewPosition() {
     }
+
 
     @When("Delete a new position")
     public void deleteANewPosition() {

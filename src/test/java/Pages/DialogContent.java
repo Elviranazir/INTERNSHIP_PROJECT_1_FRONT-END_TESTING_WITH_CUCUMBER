@@ -92,4 +92,11 @@ public class DialogContent extends MyMethods {
 
     @FindBy(css = "iframe[class=\"tox-edit-area__iframe\"]")
     public WebElement iFrame;
+
+    @FindBy(xpath =  "//span[@class=\"mat-mdc-button-touch-target\"]")
+    public WebElement editButton;
+
+    @FindBy(xpath =  "//span[@class=\"mdc-button__label\"][5]")
+    public WebElement DeleteConfirmButton;
+
 }
