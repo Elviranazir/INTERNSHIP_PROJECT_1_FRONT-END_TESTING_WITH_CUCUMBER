@@ -7,6 +7,6 @@ import io.cucumber.testng.CucumberOptions;
         glue = "StepDefinitions"
 )
 
-public class _01_RunnersIntro extends AbstractTestNGCucumberTests {
+public class _IP1FETWC_1_Add_Edit_Delete_Position extends AbstractTestNGCucumberTests {
 
 }
