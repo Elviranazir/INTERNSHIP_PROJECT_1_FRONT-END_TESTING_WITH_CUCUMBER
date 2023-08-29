@@ -70,6 +70,11 @@ public class _IP1FETWC_6_Add_Edit_Delete_Subject_Categories_under_Education_Setu
 
     @And("Click on Delete button")
     public void clickOnDeleteButton() {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         dialogContent.clickMethod(dialogContent.deleteButton);
     }
 

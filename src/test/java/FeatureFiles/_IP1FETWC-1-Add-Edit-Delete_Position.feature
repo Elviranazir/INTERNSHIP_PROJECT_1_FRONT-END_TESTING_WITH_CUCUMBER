@@ -15,7 +15,6 @@ As an Admin User I should be able to Add-Edit-Delete Position Categories Under H
     And Click on Setup
     And Click on Positions
 
-
   Scenario: Add a new position
     When Add a new position
     Then Success message should be displayed
