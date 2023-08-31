@@ -2,6 +2,7 @@ package StepDefinitions;
 
 import Pages.DialogContent;
 import Pages.LeftNavBar;
+import Utilities.BaseDriver;
 import Utilities.MyMethods;
 import Utilities.ParameterDriver;
 import io.cucumber.java.en.And;
@@ -16,7 +17,7 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
 
     @Given("Navigate to Campus")
     public void navigate_to_campus() {
-        ParameterDriver.getDriver().get("https://test.mersys.io/");
+        BaseDriver.getDriver().get("https://test.mersys.io/");
     }
 
     @Given("Enter username and password")

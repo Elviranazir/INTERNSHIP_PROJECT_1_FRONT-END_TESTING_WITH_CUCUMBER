@@ -105,6 +105,64 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder=\"Code\"])[2]")
     public WebElement educationSetupSubjectCategoriesCodeInbox;
 
+    //Luba's locators start
+
+    @FindBy(xpath = " (//input[@data-placeholder='Name'])[2]")
+    public WebElement nameNewBankAccountFrom;
+
+    @FindBy(xpath = " //input[@data-placeholder='IBAN']")
+    public WebElement newAccountFormIBAN;
+
+    @FindBy(xpath = " (//span[text()='Currency'])[3]")
+    public WebElement newAccountFormCurrency;
+    @FindBy(xpath = " //span[text()[normalize-space()='EUR']]")
+    public WebElement newAccountFormEUR;
+
+    @FindBy(xpath = " //input[@data-placeholder='Integration Code']")
+    public WebElement newAccountFormIntegrationCode;
+
+    @FindBy(xpath = " //td[normalize-space()='Luda']")
+    public WebElement successMessageAddedNewAccount;
+
+    @FindBy(xpath = " //td[normalize-space()='Mirabella']")
+    public WebElement successMessageEditNewAccount;
+
+    @FindBy(xpath = "//span[text()='Classroom']")
+    public WebElement classroomSelectorNewLocation;
+
+    @FindBy(xpath = "(//span[text()[normalize-space()='Classroom']])[2]")
+    public WebElement classroomLocation;
+
+    @FindBy(xpath = "//input[@data-placeholder='Capacity']")
+    public WebElement capacityNewLocation;
+
+    @FindBy(xpath = " //td[normalize-space()='Edited']")
+    public WebElement successMessageEditNewLocation;
+
+
+    @FindBy(xpath = "//mat-toolbar-row[@class='mat-toolbar-row']")
+    public WebElement toolbarNewLocation;
+
+    @FindBy(xpath = " //td[normalize-space()='San Francisco']")
+    public WebElement successMessageAddedNewLocation;
+
+
+    @FindBy(xpath = " //input[@data-placeholder='Short Name']")
+    public WebElement shortNameLocation;
+
+    @FindBy(xpath = " (//button[@color='warn'])[1]")
+    public WebElement deleteLocationButton;
+
+    @FindBy(xpath = " //td[normalize-space()='Art & Craft']")
+    public WebElement successMessageAddedNewDepartment;
+
+    @FindBy(xpath = " //td[normalize-space()='Art And Craft']")
+    public WebElement successMessageEditNewDepartment;
+
+    //Luba's locators finish
+
+
+
 
 
 }
