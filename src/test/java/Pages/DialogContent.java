@@ -105,7 +105,13 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath = "(//input[@data-placeholder=\"Code\"])[2]")
     public WebElement educationSetupSubjectCategoriesCodeInbox;
 
+    @FindBy(xpath = "//input[@data-placeholder=\"Name\"]")
+    public WebElement positionCategoriesSearchNameSection;
+
     @FindBy(css = "a[href=\"/attestation/list\"]")
     public WebElement AttestationsSetupHumanResources;
+
+
+
 
 }
