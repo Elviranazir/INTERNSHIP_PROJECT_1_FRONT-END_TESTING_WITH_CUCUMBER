@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test name="IP1FETWC_6_Add_Edit_Delete_Subject_Categories_under_Education_Setup">
+    <test name="_IP1FETWC_5_Add_Edit_Delete_Position_Categories_Under_Human_Resources_Setup">
 
         <parameter name="browser" value="firefox"></parameter>
 
         <classes>
-            <class name="Runners._IP1FETWC_6_Add_Edit_Delete_Subject_Categories_under_Education_Setup"></class>
+            <class name="Runners._IP1FETWC_5_Add_Edit_Delete_Position_Categories_Under_Human_Resources_Setup"></class>
         </classes>
     </test>
 </suite>
