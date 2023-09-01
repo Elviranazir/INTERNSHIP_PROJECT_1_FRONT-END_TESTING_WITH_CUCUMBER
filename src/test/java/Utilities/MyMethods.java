@@ -13,25 +13,25 @@ public class MyMethods {
     public WebDriverWait wait = new WebDriverWait(ParameterDriver.getDriver(), Duration.ofSeconds(10));
 
     public void clickMethod(WebElement element){
-        waitUntilVisible(element);
+        waitUntilVisible();
         wait.until(ExpectedConditions.elementToBeClickable(element));
         scrollToElement(element);
         element.click();
     }
 
     public void sendKeysMethod(WebElement element, String text){
-        waitUntilVisible(element);
+        waitUntilVisible();
         scrollToElement(element);
         element.clear();
         element.sendKeys(text);
     }
 
     public void assertText(WebElement element, String text){
-        waitUntilVisible(element);
+        waitUntilVisible();
         Assert.assertTrue(element.getText().contains(text));
     }
 
-    public void waitUntilVisible(WebElement element){
+    public void waitUntilVisible(){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 

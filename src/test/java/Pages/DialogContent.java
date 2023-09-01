@@ -5,8 +5,14 @@ import Utilities.ParameterDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.When;
 
 public class DialogContent extends MyMethods {
+
+    public WebElement passportName;
+    public WebElement searchpassportNameInput;
+    private WebElement selectStage;
 
     public DialogContent() {
         PageFactory.initElements(ParameterDriver.getDriver(), this);
@@ -108,4 +114,53 @@ public class DialogContent extends MyMethods {
     @FindBy(css = "a[href=\"/attestation/list\"]")
     public WebElement AttestationsSetupHumanResources;
 
+    DialogContent dc = new DialogContent();
+    LeftNavBar lb = new LeftNavBar();
+
+    @And("Navigate to SetUp")
+    public void navigateToSetUp() {
+        clickMethod(lb.setUpButton);
+    }
+
+    @And("Navigate to Parameters")
+    public void navigateToParameters() {
+        clickMethod(lb.parametersButton);
+    }
+
+    @And("Click on Document Types")
+    public void clickOnDocumentTypes() {
+        clickMethod(lb.documentTypes);
+    }
+
+    @When("Add a new Document Type")
+    public void addANewDocumentType() {
+        clickMethod(dc.addButton);
+        sendKeysMethod(dc.formNameInput, "Leyla");
+        clickMethod(dc.selectStage);
+        clickMethod(dc.selectStage);
+        sendKeysMethod();
+
+    }
+
+    public void sendKeysMethod() {
+    }
+
+    @When("Edit a new Document Type")
+    public void editANewDocumentType() {
+    }
+
+    @When("Delete a new Document Type")
+    public void deleteANewDocumentType() {
+    }
+
+    @FindBy(xpath = "(//span[text()='Document Types'])[1]")
+    public WebElement documentTypes;
+
 }
+
+
+
+
+
+
+

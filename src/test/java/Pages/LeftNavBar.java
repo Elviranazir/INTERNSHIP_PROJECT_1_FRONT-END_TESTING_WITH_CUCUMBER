@@ -5,8 +5,13 @@ import Utilities.ParameterDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.w3c.dom.html.HTMLInputElement;
 
 public class LeftNavBar extends MyMethods {
+
+    public WebElement documentTypes;
+    public HTMLInputElement Parameters;
+    public HTMLInputElement DocumentTypes;
 
     public LeftNavBar() {
         PageFactory.initElements(ParameterDriver.getDriver(), this);
