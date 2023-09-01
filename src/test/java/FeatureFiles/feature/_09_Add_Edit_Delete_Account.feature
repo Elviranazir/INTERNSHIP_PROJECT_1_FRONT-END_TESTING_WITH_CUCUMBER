@@ -4,6 +4,8 @@ Feature: Add-Edit-Delete Bank Accounts under Parameters Setup
   Admin User should be able to Add Bank Accounts, Edit Bank Accounts and Delete Bank Accounts
   for setting up parameters for different schools, students and employees.
 
+  #comment for merging, delete
+
   Background:    Login and Navigate to campus
     Given Navigate to Campus
     When Enter username and password

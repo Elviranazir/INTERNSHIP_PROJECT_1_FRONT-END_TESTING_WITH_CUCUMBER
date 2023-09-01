@@ -52,12 +52,7 @@ public class _09_Add_Edit_Delete_Account_Steps extends MyMethods {
         waitUntilVisible(dc.searchNameInput);
         sendKeysMethod(dc.searchNameInput, "Luda");
         clickMethod(dc.searchButton);
-       // waitUntilVisible(dc.editButton);
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        waitUntilVisible(dc.editButton);
         clickMethod(dc.editButton);
         sendKeysMethod(dc.nameNewBankAccountFrom, "Mirabella");
         clickMethod(dc.saveButton);

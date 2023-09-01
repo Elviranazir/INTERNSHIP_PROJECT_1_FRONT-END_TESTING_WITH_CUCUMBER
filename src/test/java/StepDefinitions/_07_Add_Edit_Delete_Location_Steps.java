@@ -13,30 +13,6 @@ public class _07_Add_Edit_Delete_Location_Steps extends MyMethods {
     LeftNavBar ln = new LeftNavBar();
     DialogContent dc = new DialogContent();
 
-//    @Given("Navigate to Campus")
-//    public void navigate_to_campus() {
-//        BaseDriver.getDriver().get("https://test.mersys.io/");
-//    }
-//
-//    @Given("Enter username and password")
-//    public void enter_username_and_password() {
-//        try {
-//            Thread.sleep(7000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//    //    dc.username.sendKeys("turkeyts");
-//        dc.sendKeysMethod(dc.username, "turkeyts");
-//   //     dc.password.sendKeys("TechnoStudy123");
-//        dc.sendKeysMethod(dc.password, "TechnoStudy123");
-//    }
-//
-//    @When("Click on Login Button")
-//    public void click_on_login_button() {
-//        dc.loginButton.click();
-//    }
-//
-
 
     @And("Navigate to School Setup")
     public void navigateToSchoolSetup() {

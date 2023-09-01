@@ -160,6 +160,7 @@ public class DialogContent extends MyMethods {
     public WebElement successMessageEditNewDepartment;
 
     //Luba's locators finish
+    // #comment for merging, delete
 
 
 

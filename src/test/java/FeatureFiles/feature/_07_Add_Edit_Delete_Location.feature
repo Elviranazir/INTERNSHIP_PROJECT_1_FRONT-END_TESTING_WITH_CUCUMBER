@@ -1,6 +1,7 @@
 Feature: Add-Edit-Delete School Locations under School Setup
 
   As an Admin User I should be able to Add-Edit-Delete School Locations under School Setup
+  #adding comment for merging , delete it
 
   Background:   Login and Navigate to School Location
     Given Navigate to Campus

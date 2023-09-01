@@ -69,5 +69,5 @@ public class LeftNavBar extends MyMethods {
     public WebElement bankAccountsButton;
 
     // Luba's locators finish
-
+// #comment for merging, delete
 }

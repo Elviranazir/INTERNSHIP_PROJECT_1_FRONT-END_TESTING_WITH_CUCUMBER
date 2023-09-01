@@ -1,6 +1,7 @@
 Feature: Add-Edit-Delete Departments under School Setup
 
   As an Admin User I should be able to Add-Edit-Delete Departments under School Setup
+  #comment for merging, delete
 
   Background: Login and Navigate to School Location
     Given Navigate to Campus

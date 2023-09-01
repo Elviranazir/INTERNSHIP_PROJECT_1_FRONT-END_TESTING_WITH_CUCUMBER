@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class _08_Add_Edit_Delete_Departments_Steps extends MyMethods {
-
+// making comment for merging
     LeftNavBar ln = new LeftNavBar();
     DialogContent dc = new DialogContent();
     @And("Navigate to Departments")
