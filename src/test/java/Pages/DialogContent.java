@@ -163,6 +163,11 @@ public class DialogContent extends MyMethods {
     // #comment for merging, delete
 
 
+    @FindBy(xpath = "//input[@data-placeholder=\"Name\"]")
+    public WebElement positionCategoriesSearchNameSection;
+
+    @FindBy(css = "a[href=\"/attestation/list\"]")
+    public WebElement AttestationsSetupHumanResources;
 
 
 

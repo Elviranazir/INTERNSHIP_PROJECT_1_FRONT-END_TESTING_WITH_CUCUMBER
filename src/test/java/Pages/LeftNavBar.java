@@ -59,6 +59,9 @@ public class LeftNavBar extends MyMethods {
     @FindBy(xpath ="//span[text()='School Setup']" )
     public WebElement schoolSetupButton;
 
+    @FindBy(xpath = "(//span[.='Position Categories'])[1]")
+    public WebElement humanResourcesPositionCategories;
+
     @FindBy(xpath ="(//span[text()='Locations'])[1]" )
     public WebElement locationsButton;
 
@@ -69,5 +72,4 @@ public class LeftNavBar extends MyMethods {
     public WebElement bankAccountsButton;
 
     // Luba's locators finish
-// #comment for merging, delete
 }

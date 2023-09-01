@@ -9,6 +9,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.apache.poi.ss.formula.ThreeDEval;
 
 public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
 
@@ -59,6 +60,11 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
 
     @Then("Success message should be displayed")
     public void successMessageShouldBeDisplayed() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         dc.assertText(dc.successMessage, "successfully");
     }
 
