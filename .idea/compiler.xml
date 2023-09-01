@@ -10,8 +10,5 @@
         <module name="Us_Batch8_Cucumber_R_MyCodes" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="INTERNSHIP_PROJECT_1_FRONT-END_TESTING_WITH_CUCUMBER" target="20" />
-    </bytecodeTargetLevel>
   </component>
 </project>
