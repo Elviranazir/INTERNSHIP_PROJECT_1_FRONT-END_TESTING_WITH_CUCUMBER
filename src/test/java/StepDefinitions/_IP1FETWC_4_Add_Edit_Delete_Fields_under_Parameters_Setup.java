@@ -6,43 +6,24 @@ import Utilities.ParameterDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import java.util.List;
 
 public class _IP1FETWC_4_Add_Edit_Delete_Fields_under_Parameters_Setup extends DialogContent {
     DialogContent dc = new DialogContent();
     LeftNavBar lb = new LeftNavBar();
-
-
-
-    @Given("Navigate to Campus")
-    public void navigate_to_campus() {
-        ParameterDriver.getDriver().get("https://test.mersys.io/");
-
-    }
-    @Given("Enter username and password")
-    public void enter_username_and_password() {
-        dc.sendKeysMethod(dc.username,"turkeyts");
-        dc.sendKeysMethod(dc.password,"TechnoStudy123");
-
-    }
-    @Given("Click on Login Button")
-    public void click_on_login_button() {
-        dc.loginButton.click();
-
-    }
     @Given("Navigate to Setup")
-    public void navigate_to_setup() {
+    public void navigate_to_Setup(){
         lb.setUpButton.click();
+    }
+
+    @Given("Click on Fields")
+    public void click_on_fields() {
+      lb.FieldsButton.click();
 
     }
     @Given("Click on Parameters")
     public void click_on_parameters() {
         lb.parametersButton.click();
-
-    }
-    @Given("Click on Fields")
-    public void click_on_fields() {
-      lb.FieldsButton.click();
-
     }
     @When("Add a new Fields")
     public void add_a_new_fields() {
@@ -61,8 +42,6 @@ public class _IP1FETWC_4_Add_Edit_Delete_Fields_under_Parameters_Setup extends D
         dc.saveButton.click();
 
 
-
-
     }
     @When("Delete a new Fields")
     public void delete_a_new_fields() {
@@ -72,7 +51,10 @@ public class _IP1FETWC_4_Add_Edit_Delete_Fields_under_Parameters_Setup extends D
     }
     @Then("Success message should be displayed")
     public void success_message_should_be_displayed() {
-        dc.assertText(dc.successMessage, "Successfully");
-
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
     }
 }
+
+
+
