@@ -25,3 +25,5 @@ Feature: Add-Edit-Delete Document Types under Parameters Setup
   Scenario: Delete a new Document Type
     When Delete a new Document Type
     Then Success message should be displayed
+
+    //uptade

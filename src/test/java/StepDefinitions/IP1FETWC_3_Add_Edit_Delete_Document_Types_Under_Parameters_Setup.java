@@ -90,7 +90,7 @@ public class IP1FETWC_3_Add_Edit_Delete_Document_Types_Under_Parameters_Setup {
         successMessageShouldBeDisplayed();
     }
 }
-//uptade
+
 
 
 
