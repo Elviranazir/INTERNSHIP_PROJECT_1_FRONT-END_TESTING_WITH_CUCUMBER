@@ -17,7 +17,7 @@ public class BaseDriver {
             closePreviousDrivers();
             Logger logger = Logger.getLogger("");
             logger.setLevel(Level.SEVERE);
-            driver = new EdgeDriver();
+            driver = new ChromeDriver();
             driver.manage().window().maximize();
             driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

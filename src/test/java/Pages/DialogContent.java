@@ -160,7 +160,6 @@ public class DialogContent extends MyMethods {
     public WebElement successMessageEditNewDepartment;
 
     //Luba's locators finish
-    // #comment for merging, delete
 
 
     @FindBy(xpath = "//input[@data-placeholder=\"Name\"]")
@@ -169,6 +168,26 @@ public class DialogContent extends MyMethods {
     @FindBy(css = "a[href=\"/attestation/list\"]")
     public WebElement AttestationsSetupHumanResources;
 
+    @FindBy(linkText = "Save")
+    public WebElement saveFormGradeLevel;
+
+    @FindBy(xpath="//input[@data-placeholder='Name']")
+    public WebElement nameFormGradeLevel;
+
+    @FindBy(xpath="//input[@data-placeholder='Short Name']")
+    public WebElement shortNameFormGradeLevel;
+
+    @FindBy(xpath="//input[@data-placeholder='Order']")
+    public WebElement orderFormGradeLevel;
+
+    @FindBy(xpath="//button[@class='mat-badge mdc-icon-button mat-mdc-icon-button mat-badge-accent mat-unthemed mat-mdc-button-base mat-badge-below mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted']")
+    public WebElement addGradeLevels;
+
+    @FindBy(xpath="//button[@class='mat-mdc-tooltip-trigger mat-badge mdc-icon-button mat-mdc-icon-button mat-badge-accent mat-basic mat-mdc-button-base mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted']")
+    public WebElement searchGradeLevels;
+
+    @FindBy(xpath="//button[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-accent mat-mdc-button-base ng-star-inserted']")
+    public WebElement editGradeLevels;
 
 
 }

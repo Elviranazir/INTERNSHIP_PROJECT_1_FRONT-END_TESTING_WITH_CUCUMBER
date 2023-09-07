@@ -18,7 +18,7 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
 
     @Given("Navigate to Campus")
     public void navigate_to_campus() {
-        BaseDriver.getDriver().get("https://test.mersys.io/");
+        ParameterDriver.getDriver().get("https://test.mersys.io/");
     }
 
     @Given("Enter username and password")
@@ -38,7 +38,7 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
         lb.HumanResources.click();
     }
 
-    @And("Click on Setup")
+    @And("Click on Human Resources Setup")
     public void clickOnSetup() {
         waitUntilVisible(lb.SetUpHumanResources);
         lb.SetUpHumanResources.click();
@@ -85,8 +85,12 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
     public void deleteANewPosition() {
         sendKeysMethod(dc.searchNameInput, "Bella");
         sendKeysMethod(dc.searchShortNameInput, "b");
+        waitUntilVisible(dc.searchButton);
+        clickMethod(dc.searchButton);
+        waitUntilVisible(dc.deleteButton);
         clickMethod(dc.deleteButton);
         clickMethod(dc.deleteConfirmButton);
+        waitUntilVisible(dc.successMessage);
         successMessageShouldBeDisplayed();
     }
 }

@@ -12,7 +12,7 @@ As an Admin User I should be able to Add-Edit-Delete Position Categories Under H
     And Enter username and password
     And Click on Login Button
     And Navigate to Human Resources page
-    And Click on Setup
+    And Click on Human Resources Setup
     And Click on Positions
 
   Scenario: Add a new position

@@ -72,4 +72,7 @@ public class LeftNavBar extends MyMethods {
     public WebElement bankAccountsButton;
 
     // Luba's locators finish
+
+    @FindBy(xpath = "//span[text()='Grade Levels']")
+    public WebElement gradeLevels;
 }
