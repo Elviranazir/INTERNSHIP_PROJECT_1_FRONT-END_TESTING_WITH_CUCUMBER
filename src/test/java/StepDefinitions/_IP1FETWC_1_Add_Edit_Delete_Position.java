@@ -44,6 +44,7 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
         lb.SetUpHumanResources.click();
     }
 
+
     @And("Click on Positions")
     public void clickOnPositions() {
         waitUntilVisible(lb.Positions);
@@ -93,4 +94,5 @@ public class _IP1FETWC_1_Add_Edit_Delete_Position extends MyMethods {
         waitUntilVisible(dc.successMessage);
         successMessageShouldBeDisplayed();
     }
+
 }

@@ -20,12 +20,10 @@ Feature: Grade Levels Functionality
 
   Scenario: Edit a grade level
     When Clicked on Grade Levels Edit button
-    And Change the name with "Amy"
+    And Edit the name with "Amy"
     And Clicked on Save button
     Then Success message should be displayed
 
   Scenario: Delete a grade level
-    And Search for "295"
-    And Click on Delete button
-    When Clicked on Confirm Delete button
+    And Delete a grade level
     Then Success message should be displayed

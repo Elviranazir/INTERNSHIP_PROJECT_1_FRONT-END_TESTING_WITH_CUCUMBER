@@ -189,5 +189,9 @@ public class DialogContent extends MyMethods {
     @FindBy(xpath="//button[@class='mat-mdc-tooltip-trigger mdc-icon-button mat-mdc-icon-button mat-accent mat-mdc-button-base ng-star-inserted']")
     public WebElement editGradeLevels;
 
+    @FindBy(xpath ="//input[@id='ms-text-field-20']" )
+    public WebElement editNameGradeLevel;
+
+
 
 }
